@@ -1,4 +1,4 @@
-package com.datasarquivos;
+package com.datasarquivos.datas;
 
 import java.text.ParseException;
 import java.time.Duration;
