@@ -1,3 +1,3 @@
 Maria;pessoa1@gmail.com;50
-Jose;pessoa1@gmail.com;21
-Tulio;pessoa1@gmail.com;32
+Jose;pessoa2@gmail.com;21
+Tulio;pessoa3@gmail.com;32

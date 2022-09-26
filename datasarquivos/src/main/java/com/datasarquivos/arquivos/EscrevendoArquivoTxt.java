@@ -17,12 +17,12 @@ public class EscrevendoArquivoTxt {
 
         Pessoa pessoa2 = new Pessoa();
         pessoa2.setNome("Jose");
-        pessoa2.setEmail("pessoa1@gmail.com");
+        pessoa2.setEmail("pessoa2@gmail.com");
         pessoa2.setIdade(21);
 
         Pessoa pessoa3 = new Pessoa();
         pessoa3.setNome("Tulio");
-        pessoa3.setEmail("pessoa1@gmail.com");
+        pessoa3.setEmail("pessoa3@gmail.com");
         pessoa3.setIdade(32);
 
         List<Pessoa> pessoas = new ArrayList<Pessoa>();
