@@ -8,12 +8,14 @@ public class TempoObjetoPeriodo {
     public static void main(String[] args) throws ParseException {
         LocalDate dataAntiga = LocalDate.of(2020, 9, 26);
         // LocalDate dataAntiga = LocalDate.parse("2020-9-26");
+        System.out.println("Data Antiga: "+dataAntiga);
         LocalDate dataNova = LocalDate.of(2022, 2, 13);
         // LocalDate dataNova = LocalDate.parse("2022-2-13");
+        System.out.println("Data Nova: "+dataNova);
         System.out.println("Data antiga e maior que data nova:  " + dataAntiga.isAfter(dataNova));
         System.out.println("Data antiga e anterior que data nova:  " + dataAntiga.isBefore(dataNova));
         // equals compara os dados, isEqual compara as datas
-        System.out.println("Comparacao de data:  " + dataAntiga.isEqual(dataNova));
+        System.out.println("Comparacao de data, e igual?   " + dataAntiga.isEqual(dataNova));
 
         Period perido = Period.between(dataAntiga, dataNova);
 
