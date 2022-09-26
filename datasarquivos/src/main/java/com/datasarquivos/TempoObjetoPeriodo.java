@@ -10,8 +10,8 @@ public class TempoObjetoPeriodo {
         // LocalDate dataAntiga = LocalDate.parse("2020-9-26");
         LocalDate dataNova = LocalDate.of(2022, 2, 13);
         // LocalDate dataNova = LocalDate.parse("2022-2-13");
-        System.out.println("Data atinga e maior que data nova:  " + dataAntiga.isAfter(dataNova));
-        System.out.println("Data atinga e anterior que data nova:  " + dataAntiga.isBefore(dataNova));
+        System.out.println("Data antiga e maior que data nova:  " + dataAntiga.isAfter(dataNova));
+        System.out.println("Data antiga e anterior que data nova:  " + dataAntiga.isBefore(dataNova));
         // equals compara os dados, isEqual compara as datas
         System.out.println("Comparacao de data:  " + dataAntiga.isEqual(dataNova));
 
