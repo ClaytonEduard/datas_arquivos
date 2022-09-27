@@ -10,12 +10,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
-public class ApachePoiEditando {
+public class ApachePoiEditandoCelulaNoXLS {
 
-    private static final Logger log = LogManager.getLogger(ApachePoiEditando.class);
+    private static final Logger log = LogManager.getLogger(ApachePoiEditandoCelulaNoXLS.class);
 
 
     public static void main(String[] args) throws IOException {
@@ -35,10 +34,8 @@ public class ApachePoiEditando {
         while (linhaIterator.hasNext()) {
             Row linha = linhaIterator.next();/* Dados da pessoa na linha */
 
-            int numeroCelula = linha.getPhysicalNumberOfCells();/* retorna o numero de celulas */
-
-            Cell cell = linha.createCell(numeroCelula);/* cria uma celula */
-            cell.setCellValue("5.400,20");
+            String valorCelula =  linha.getCell(0).getStringCellValue();
+            linha.getCell(0).setCellValue(valorCelula+ "Teste ");
 
         }
         entrada.close();
