@@ -10,9 +10,6 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
-import lombok.extern.log4j.Log4j2;
-
-@Log4j2
 public class ApachePoi {
     /**
      * @param args
@@ -77,9 +74,6 @@ public class ApachePoi {
         workbook.write(saida); /* excreve a planilha em arquivo */
         saida.flush();
         saida.close();
-        ApachePoi logger = new ApachePoi();
-        log.info("Planilha criada com sucesso!");
-        log.error("error");
         System.out.println("Planilha criada com sucesso!");
     }
 }
